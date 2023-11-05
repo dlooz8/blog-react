@@ -5,12 +5,25 @@ import Comments from '../components/Comments';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
-function Postdetail({ author }) {
+function Postdetail() {
   const navigate = useNavigate();
   const { postId } = useParams();
   const [post, setPost] = useState({});
+  const [name, setName] = useState('');
+  const [isAuth, setIsAuth] = useState(false);
+
+
 
   useEffect(() => {
+    supabase.auth.onAuthStateChange((event, session) => {
+      if (session === null) {
+        setIsAuth(false);
+      } else if (session !== null) {
+        setName(session.user.user_metadata.name);
+        setIsAuth(true);
+      }
+    });
+
     const fetchPost = async () => {
       const { data, error } = await supabase
         .from('posts')
@@ -34,7 +47,7 @@ function Postdetail({ author }) {
       .eq('id', postId)
       .single();
 
-    if (post.author === author) {
+    if (post.author === name) {
       await supabase
         .from('posts')
         .delete()
@@ -71,12 +84,12 @@ function Postdetail({ author }) {
           <p className="text-gray-700 font-montserrat text-lg" id="date">{post.date}</p>
           <p className="text-gray-700 font-montserrat text-lg" id="author">{post.author}</p>
         </div>
-        {post.author === author && (
+        {post.author === name && (
           <button 
           className="block w-full rounded-lg bg-red-500 hover:bg-red-600 duration-200 px-5 py-3 text-sm font-medium text-white"
           onClick={handleDeletePost}>Удалить пост</button>
           )}
-        <Comments author={author} post_id={postId} />
+        <Comments author={name} post_id={postId} />
       </div>
     </div>
   );
