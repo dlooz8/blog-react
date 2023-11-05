@@ -51,7 +51,7 @@ const Router = () => {
                 <Route path="/aboutus" element={<Aboutus />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/signin" element={<Signin />} />
-                <Route path="/profile" element={<Profile />} />
+                <Route path="/profile" element={<Profile author={name} />} />
                 <Route path="/registration" element={<Registration />} />
                 <Route path="/post/:postId" element={<Postdetail author={name} />} />
                 <Route path="*" element={<Notfound />} />

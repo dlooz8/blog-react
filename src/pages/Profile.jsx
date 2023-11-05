@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Postadd from '../components/Postadd';
 import { supabase } from '../config/Supabaseclient';
 
-const Profile = () => {
+const Profile = ({author}) => {
     const [name, setName] = React.useState('');
     const navigate = useNavigate();
 
@@ -17,7 +17,7 @@ const Profile = () => {
 
     return (
         <div>
-            <Postadd author={name}/>
+            <Postadd author={author}/>
             <button onClick={handleSignOut} className='text-gray-600 text-4xl font-semibold'>Выйти</button>
       </div>
     )

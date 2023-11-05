@@ -9,7 +9,6 @@ function Postadd({author}) {
   const [ theme , setTheme ] = useState('');
   const [ text , setText ] = useState('');
 
-
   async function uploadImage(e) {
     const file = e.target.files[0];
     const fileKey = Date.now() + file.name;
