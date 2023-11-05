@@ -8,7 +8,7 @@ const Posts = () => {
   const [currentPage, setCurrentPage] = useState(parseInt(localStorage.getItem('currentPage')) || 1);
   const [totalPages, setTotalPages] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedFilters, setSelectedFilters] = useState(false);
+  const [selectedFilters, setSelectedFilters] = useState(true);
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {
