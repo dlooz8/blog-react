@@ -31,7 +31,7 @@ const Router = () => {
             <nav className="mx-auto max-w-[1640px]">
                 <div className="sm:flex sm:justify-between mx-16 my-8 lg:mx-36 lg:my-16 flex-wrap">
                     <div className="font-mono font-bold text-3xl mx-auto sm:mx-0 text-center sm:text-start">
-                    <label className="text-4xl">Wired.</label>
+                    <a href='/' className="text-4xl">Wired.</a>
                     </div>
                     <Toaster />
                     <div className="grid grid-cols-2 py-4  sm:p-0 text-center sm:flex sm:flex-row sm:justify-between font-montserrat text-gray-500 gap-12 md:gap-16">
