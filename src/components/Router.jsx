@@ -28,7 +28,7 @@ const Router = () => {
 
     return (
         <div>
-            <nav className="mx-auto max-w-[1640px]">
+            <nav className="mx-auto max-w-[1920px]">
                 <div className="sm:flex sm:justify-between mx-16 my-8 lg:mx-36 lg:my-16 flex-wrap">
                     <div className="font-mono font-bold text-3xl mx-auto sm:mx-0 text-center sm:text-start">
                     <a href='/' className="text-4xl">Wired.</a>

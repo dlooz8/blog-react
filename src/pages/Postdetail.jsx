@@ -22,6 +22,11 @@ function Postdetail() {
         setName(session.user.user_metadata.name);
         setIsAuth(true);
       }
+
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
 
     const fetchPost = async () => {

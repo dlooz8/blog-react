@@ -62,7 +62,7 @@ function Postadd({author}) {
                   <div className="flex text-sm text-gray-600">
                     <label htmlFor="file-upload" className="relative cursor-pointer bg-red-100 px-2 py-0.5 rounded-md font-medium text-red-600 hover:text-gray-600 hover:underline duration-75 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
                       <span className="">Upload an image</span>
-                      <input id="file-upload" name="file-upload" type="file" className="sr-only" onChange={(e) => uploadImage(e)}/>
+                      <input id="file-upload" name="file-upload" type="file" className="sr-only" accept="image/*,.pdf" onChange={(e) => uploadImage(e)}/>
                     </label>
                     <p className="pl-1 text-red-500">or drag and drop</p>
                   </div>
