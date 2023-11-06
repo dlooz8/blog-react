@@ -41,6 +41,7 @@ const Signin = () => {
                 <input
                   type="email"
                   value={email}
+                  required="required"
                   onChange={(event) => setEmail(event.target.value)}
                   className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm outline-red-300"
                   placeholder="Введите ваш email"
@@ -68,6 +69,7 @@ const Signin = () => {
                 <input
                   type="password"
                   value={password}
+                  required="required"
                   onChange={(event) => setPassword(event.target.value)}
                   className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm outline-red-300"
                   placeholder="Введите ваш пароль"

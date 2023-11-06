@@ -60,6 +60,7 @@ const Registration = () => {
                         type="text"
                         id='name'
                         value={name}
+                        required="required"
                         onChange={(event) => setName(event.target.value)}
                         className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm outline-red-300"
                         placeholder="Введите ваш никнейм"
@@ -72,6 +73,7 @@ const Registration = () => {
                         type="email"
                         id='regemail'
                         value={regemail}
+                        required="required"
                         placeholder="Введите ваш e-mail"
                         onChange={(event) => setRegEmail(event.target.value)}
                         className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm outline-red-300"
@@ -101,6 +103,7 @@ const Registration = () => {
                         id='regpassword'
                         value={regpassword}
                         minLength={8}
+                        required="required"
                         onChange={(event) => setRegPassword(event.target.value)}
                         className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm outline-red-300"
                         placeholder="Введите ваш пароль"
