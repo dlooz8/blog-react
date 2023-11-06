@@ -34,7 +34,7 @@ const Router = () => {
                     <label className="text-4xl">Wired.</label>
                     </div>
                     <Toaster />
-                    <div className="grid grid-cols-2 p-4 sm:p-0 text-center sm:flex sm:flex-row sm:justify-between font-montserrat text-gray-500 gap-8 sm:gap-12 md:gap-16">
+                    <div className="grid grid-cols-2 py-4  sm:p-0 text-center sm:flex sm:flex-row sm:justify-between font-montserrat text-gray-500 gap-12 md:gap-16">
                         <Link className="hover:text-red-600 duration-100" to="/">ГЛАВНАЯ</Link>
                         <Link className="hover:text-red-600 duration-100" to="/aboutus">О НАС</Link>
                         <Link className="hover:text-red-600 duration-100" to="/contacts">КОНТАКТЫ</Link>

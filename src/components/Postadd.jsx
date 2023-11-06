@@ -50,7 +50,7 @@ function Postadd({author}) {
 
   return (
     <section className="font-montserrat">
-      <div className="mx-auto max-w-screen-2xl px-4 py-16">
+      <div className="mx-auto max-w-screen-2xl px-4 pb-16 pt-4">
         <div className="grid grid-cols-1 xl:mx-72 lg:mx-48 md:mx-16">
           <div className="rounded-lg bg-gray-100 p-8 shadow-lg">
             <form action="" className="space-y-4">

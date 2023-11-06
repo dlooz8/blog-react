@@ -98,7 +98,7 @@ const Posts = () => {
             value={searchTerm}
             onChange={handleSearch} 
             placeholder="Поиск по заголовку"
-            className="w-44 sm:w-72 rounded-md border-gray-300 outline-red-300 mx-auto px-4 max-w-xl py-2.5 pe-10 shadow-md sm:text-md hover:shadow-lg duration-200"
+            className="w-64 sm:w-72 rounded-md border-gray-300 outline-red-300 mx-auto px-4 max-w-xl py-2.5 pe-10 shadow-md sm:text-md hover:shadow-lg duration-200"
           />
           <span className="absolute inset-y-0 end-0 grid w-10 place-content-center">
             <button type="disabled" className="text-gray-300">
